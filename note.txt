@@ -1,0 +1,280 @@
+
+user _ input = input()
+print(user_input)
+
+user_input = input("Type anything in the console")
+print(user_input)
+
+
+
+user_name: str = input("Hello my name is:")
+favorite_number: input("My favorite number:")
+favorite_color: input("My favorite color is:")
+
+
+=============
+integer type conversion
+
+favorite_number= int(input("My favorite number:"))
+
+print (favorite_number + 1)
+
+first_number = int(input("First Number:"))
+second_number = int(input("Second Number:"))
+
+print(first_number+second_number)
+
+===== sting concanetation
+
+print(Sonny + Mindoro)
+
+=========sting repetion operation
+
+print ("ice' * 3)
+=======
+
+
+===== f string
+
+P1 = int(input("Input your item 1: "))
+P2 = int(input("Input your item 2: "))
+P3 = int(input("Input your item 3: "))
+sum = P1 + P2 + P3
+print(f'Total sum: {sum}')
+
+
+output
+
+Input your item 1: 10
+Input your item 2: 10
+Input your item 3: 10
+Total sum: 30
+
+=====
+
+
+first_number = int(input("First number :"))
+second_number =int(input(" Second number:"))
+print ( first_number > second_number)
+
+======
+
+x=int(input())
+print(0< x <= 100)
+
+=====number range
+min_number = int(input("First number :"))
+max_number =int(input("Second number:"))
+number=int (input("third number"))
+
+print (min_number<number<max_number)
+
+
+
+====== If condition
+
+password_input =input("please provide password")
+password = "pass"
+if password_input == password:
+    print("Access Grantes!")
+
+
+    =====ifel
+
+    color_input = input("Please Enter a Color : ")
+color_green = "green"
+color_yellow = "yellow"
+color_red = "red"
+
+if color_input == color_green:
+    print ("go")
+elif color_input == color_yellow:
+    print("Wait")
+elif color_input== color_red:
+    print("Stop")
+else:
+    print ("malfunction")
+
+
+    password_input =input("please provide password")
+password = "pass"
+if password_input == password:
+   print("Access Granted!")
+else:
+    print( "Access Denied!")
+
+
+    ===and
+
+ has_gov_id = True
+has_nbi_Id = True
+has_registered= True
+
+if has_gov_id and has_nbi_Id and has_registered:
+    print( "processing finished")
+
+
+    ===or
+
+    number = int(input("provide a number "))
+if number == 0 or number == 1 or number == 5 or number == 10:
+    print ("Special Number Detected")
+else:
+    print(" Not a special")
+
+
+
+
+
+    ==== for
+    for item in range (10):
+    print ("This is a very long line that can take some time for you to type.")
+
+
+    ===
+    #for item in range (101):
+ #   print (item)
+
+
+ ===
+ for item in range (95,101):
+    print (item)
+ ==
+
+
+ for item in range (5, 101, 5):
+   print (item)
+
+====
+favorite_sites = [ "youtube.com","nba.com"]
+for item in favorite_sites:
+   print (item)
+
+
+
+   === common while loop
+
+
+   count = 0
+stop_program = False
+while not stop_program:
+    choice = input("Provide command: ")
+    if choice == "add":
+        count = count + 1
+        print (count)
+    elif choice == "minus":
+        count = count - 1
+        print(count)
+    elif choice == "exit":
+        stop_program = True
+for item in range(10, 0, -1):
+    print(item)
+
+
+
+    ===
+
+
+    count = 0
+stop_program = False
+while not stop_program:
+    choice = input("Provide command: ")
+    if choice == "add":
+        count +=  1
+        print (count)
+    elif choice == "minus":
+        count -= 1
+        print(count)
+    elif choice == "exit":
+        stop_program = True
+
+
+     =====break on request exercise
+
+     for item in range(100):
+    user_input = input("Stop? (y/n) ")
+    # Add code here to stop if they say y
+    if user_input == "y":
+     print(item)
+     break
+
+
+     ===
+
+     for item in range(100):
+    if 20 <= item <= 80:
+        continue
+    print(item)
+
+
+
+    === cost calculator exercise
+
+    total = 0
+    item_count = int(input("Enter number of items: "))
+    for item in range (item_count):
+        item_price = int(input("Enter price: "))
+        total += item_price
+    print (total)
+
+    ==========
+
+    def line_generator():
+    print ("line 0")
+
+    for number in range(3):
+      print ( "line", number)
+line_generator()
+
+
+
+def greetint(name):
+    print(F"hello{name}, good day for you")
+
+greeting("George')
+
+
+
+=====Quick Exercise: Line Generator (Upgrade)
+
+def line_generator(line_count):
+
+    for number in range(line_count):
+      print ( "line", number)
+line_generator(4)
+
+
+=====
+
+===Multiple Input Declaration
+
+
+def line_generator(line_count,message):
+
+    for number in range(line_count):
+
+
+
+   ====== Quick Exercise: Number Doubler
+
+
+     def double(number):
+        result=number*2
+        return result
+    print(double(3))
+      print ( "message", number,message)
+line_generator(4,"hello world")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
